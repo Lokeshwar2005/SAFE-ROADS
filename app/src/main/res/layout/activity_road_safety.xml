@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Road Safety Measures"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Infographic Images -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety1"
+            android:contentDescription="Road safety measure infographic 1"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety2"
+            android:contentDescription="Road safety measure infographic 2"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety3"
+            android:contentDescription="Road safety measure infographic 3"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety4"
+            android:contentDescription="Road safety measure infographic 4"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety5"
+            android:contentDescription="Road safety measure infographic 5" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety6"
+            android:contentDescription="Road safety measure infographic 6"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety7"
+            android:contentDescription="Road safety measure infographic 7"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety8"
+            android:contentDescription="Road safety measure infographic 8"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/safety9"
+            android:contentDescription="Road safety measure infographic 9"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Summary Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Always wear a seatbelt\n• Follow traffic signals\n• Don’t use phones while driving\n• Maintain safe distances\n• Use pedestrian crossings"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <!-- Toolbar at top -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="15dp"
+        android:id="@+id/dashboardToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:contentInsetStart="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp">
+
+        <!-- Custom layout inside toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/toolbar_logo"
+                android:layout_width="179dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="App Logo"
+                android:src="@drawable/splash" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Main content scrollable -->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Date -->
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/editDate"
+                android:inputType="date"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:drawableEnd="@android:drawable/ic_menu_today"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:textSize="16sp" />
+
+            <!-- Time -->
+            <EditText
+                android:id="@+id/editTime"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Time"
+                android:focusable="false"
+                android:drawableEnd="@android:drawable/ic_menu_recent_history"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:textSize="16sp"
+                android:inputType="time"
+                android:layout_marginTop="12dp" />
+
+            <!-- Place -->
+            <EditText
+                android:id="@+id/editPlace"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:hint="Place of Accident"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <!-- Injuries -->
+            <EditText
+                android:id="@+id/editInjuries"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:hint="Group Injuries by Type, Cause, Body Part Affected"
+                android:minLines="3"
+                android:gravity="top"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnSave"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Save Report"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SafeRoads</string>
+    <string name="step1_description">Step 1: Check for Breathing</string>
+    <string name="step1_details">Ensure the person is breathing. If not, perform CPR.</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <!-- GridLayout for all main content -->
+        <GridLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Accident Reporting -->
+            <ImageView
+                android:id="@+id/accidentImageView"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:contentDescription="Accident Reporting"
+                android:src="@drawable/ic_accident" />
+
+            <!-- Navigation -->
+            <ImageView
+                android:id="@+id/imageNavigation"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_navigation"
+                android:contentDescription="Navigation" />
+
+            <!-- Traffic Updates -->
+            <ImageView
+                android:id="@+id/imageViewTrafficUpdates"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:contentDescription="Traffic Updates"
+                android:src="@drawable/ic_traffic_updates" />
+
+            <!-- Road Safety (Replaced Fuel Calculator) -->
+            <ImageView
+                android:id="@+id/imageViewRoadSafety"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_road_safety"
+                android:contentDescription="Road Safety"/>
+
+            <!-- Incidents Reported -->
+            <ImageView
+                android:id="@+id/imageViewIncidentsReported"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_incident"
+                android:contentDescription="Incidents Reported" />
+
+            <!-- Emergency Contacts -->
+            <ImageView
+                android:id="@+id/imageViewEmergencyContacts"
+                android:layout_marginTop="20dp"
+                android:layout_width="164dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_contacts"
+                android:contentDescription="Emergency Contacts" />
+
+        </GridLayout>
+
+        <!-- Horizontal LinearLayout for Settings and Profile buttons at the bottom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <!-- Spacing between buttons -->
+            <View
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Profile Button (Left Side) -->
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                tools:ignore="VisualLintButtonSize" />
+
+            <!-- Settings Button (Right Side) -->
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
